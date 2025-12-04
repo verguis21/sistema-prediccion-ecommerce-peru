@@ -63,6 +63,13 @@ height = st.sidebar.slider("Alto (cm)", 0, 100, 10)
 width = st.sidebar.slider("Ancho (cm)", 0, 100, 20)
 
 # 5. Lógica de Predicción
+
+with st.expander("📊 Ver datos procesados (Vista Previa)"):
+    # Mostramos el DataFrame que creamos para la predicción
+    # st.dataframe permite ordenar y hacer scroll
+    st.dataframe(input_df)
+    st.info("Estos son los datos exactos que el modelo recibirá.")
+    
 if st.button("🔍 Analizar Riesgo de Envío", type="primary"):
     
     # Crear diccionario con los datos
