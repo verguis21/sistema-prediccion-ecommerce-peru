@@ -25,14 +25,13 @@ except Exception as e:
     st.stop()
 
 # --- 3. Lógica de Datos (Diccionarios) ---
-# Mapeo para que los menús sean inteligentes
 ubicaciones = {
-    'LIMA': ['Lima'],
-    'LA_LIBERTAD': ['Trujillo'],
-    'AREQUIPA': ['Arequipa'],
-    'CUSCO': ['Cusco'],
-    'PIURA': ['Piura'],
-    'LAMBAYEQUE': ['Chiclayo']
+    'LIMA': ['Lima', 'Callao', 'Huacho', 'Cañete'],
+    'LA_LIBERTAD': ['Trujillo', 'Chepen', 'Pacasmayo', 'Huamachuco'],
+    'AREQUIPA': ['Arequipa', 'Mollendo', 'Camana'],
+    'CUSCO': ['Cusco', 'Urubamba', 'Sicuani'],
+    'PIURA': ['Piura', 'Sullana', 'Talara', 'Paita'],
+    'LAMBAYEQUE': ['Chiclayo', 'Lambayeque', 'Ferreñafe']
 }
 
 pagos = ['credit_card', 'boleto', 'voucher', 'debit_card']
