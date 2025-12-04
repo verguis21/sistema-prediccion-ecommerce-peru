@@ -121,5 +121,21 @@ if st.button("🔍 Analizar Riesgo de Envío", type="primary"):
         st.progress(int(probability * 100))
 
 # 7. Footer
-st.divider()
-st.caption("Proyecto de Cómputo Distribuido y Paralelo - UPAO 2025")
+st.markdown("---")
+with st.container():
+    col1, col2 = st.columns([1, 3])
+    
+    with col1:
+        # Puedes poner el logo de UPAO si tienes el link, o dejarlo solo texto
+        st.image("https://upload.wikimedia.org/wikipedia/commons/2/23/Logo_UPAO.png", width=100)
+    
+    with col2:
+        st.markdown("""
+        ### Universidad Privada Antenor Orrego
+        **Facultad de Ingeniería** - Escuela de Ingeniería de Computación y Sistemas
+        
+        * **Curso:** Cómputo Distribuido y Paralelo
+        * **Semestre:** 2025-II
+        * **Docente:** Ing. Elías Santa Cruz
+        * **Proyecto:** Sistema Inteligente Distribuido para la Predicción de Entregas Tardías
+        """)
